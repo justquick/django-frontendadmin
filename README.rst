@@ -133,6 +133,9 @@ Custom Configuration
    named ``entry`` in the app ``blog`` the frontendadmin will try to use
    ``frontendadmin/blog_entry_form.html`` for the full form and ``frontendadmin/blog_entry_form_ajax.html``
    for the ajax form. If they do not exist, the defaults will be used.
+   
+5. Integration with `django-reversion <https://github.com/etianen/django-reversion>`_.
+    Add ``'reversion'`` to ``INSTALLED_APPS`` and ``'reversion.middleware.RevisionMiddleware'`` to ``MIDDLEWARE_CLASSES`` in your ``settings.py``
 
 License
 =======
